@@ -19,7 +19,20 @@
             <option value="5">5 Players</option>
             <!-- Add more options as needed -->
         </select>
+        <button onclick="generateRoomCode()">Generate Room Code</button>
+    </div>
+
+    <div id="roomPage" class="hidden">
+        <h1>Room Code: <span id="roomCode"></span></h1>
+        <label for="playerName">Enter Your Name:</label>
+        <input type="text" id="playerName" placeholder="Your Name">
         <button onclick="startGame()">Start Game</button>
+    </div>
+
+    <div id="friendEntry" class="hidden">
+        <label for="friendPlayerName">Friend's Name:</label>
+        <input type="text" id="friendPlayerName" placeholder="Friend's Name">
+        <button onclick="joinGame()">Join Game</button>
     </div>
 
     <script src="script.js"></script>
